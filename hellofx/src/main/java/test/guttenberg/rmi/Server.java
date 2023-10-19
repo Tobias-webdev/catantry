@@ -1,4 +1,4 @@
-package test.schorer.rmi;
+package test.guttenberg.rmi;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
