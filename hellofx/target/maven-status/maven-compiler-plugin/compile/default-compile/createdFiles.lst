@@ -1,0 +1,7 @@
+test\schorer\rmi\Client.class
+module-info.class
+org\openjfx\hellofx\App.class
+test\schorer\rmi\Server.class
+test\schorer\rmi\Player.class
+org\openjfx\hellofx\SystemInfo.class
+test\schorer\rmi\Hello.class
