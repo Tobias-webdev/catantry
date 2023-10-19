@@ -1,4 +1,4 @@
-import java.rmi.Remote;
+/*import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry,
@@ -11,6 +11,24 @@ class Client {
 				System.out.println(stub.sayHello(3));
 		} catch(Exception e){
 			//leer
+		}
+
+
+	}
+}*/
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+class Client {
+	public static void main(String [] args){
+		try {
+				Registry reg = LocateRegistry.getRegistry("localhost");// hier Name der VM oder so eingeben
+				Hello stub = (Hello) reg.lookup("Hello");		
+				System.out.println(stub.getBaum());
+		} catch(Exception e){
+			e.printStackTrace();
 		}
 
 
